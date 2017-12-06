@@ -33,7 +33,7 @@ function street16(){
 
         if (choice16[0].toLowerCase() === 'w'){
 
-            alert("You stop to watch the performer. His rendition was amazing and you feel super pumped! However, You reach GA late and end up using your last tardy. You are asked to leave the program. You Lose!")
+            alert("You stop to watch the performer. His rendition was amazing and you feel super pumped! However, You reach GA late and end up using your last tardy. You are asked to leave the program. You Lose!\nMaybe you should've taken an Uber")
 
         } else if(choice16[0].toLowerCase() === 'k'){
 
@@ -55,7 +55,7 @@ function street15(){
 
         if (choice15[0].toLowerCase() === 't'){
 
-            alert("You sit down and talk to the lady. You ask her what's wrong and she tells you about her problems. You try your best to make her feel better. She's starts to smile and is relieved of her stress. She says that she is so happy someone would stop and talk with her. You feel great about yourself. However, you are late to GA and use up your last tardy. You are asked to leave the program. You lose!")
+            alert("You sit down and talk to the lady. You ask her what's wrong and she tells you about her problems. You try your best to make her feel better. She's starts to smile and is relieved of her stress. She says that she is so happy someone would stop and talk with her. You feel great about yourself. However, you are late to GA and use up your last tardy. You are asked to leave the program. You lose!\nMaybe you should've taken an Uber")
             
 
         } else if(choice15[0].toLowerCase() === 'k'){
@@ -77,7 +77,7 @@ function mStreet(){
 
     if(mChoice[0].toLowerCase() === 'j'){
 
-        alert("You decide to Jay walk. All of a sudden someone starts blaring their horn to the left of you. This causes you to turn and look as you are walking and BAM! you get hit by a car and get knocked out.\nAs you recover conciousness, you lay on the concret with a crowd looking down at you. You tried to get up but feel that your leg is broken. As you lay your head back down on the cold concrete, your watch beeps; signalling that the hour has passed. You are offically late for class and use up your last tardy. You are asked to leave the program. You lose!")
+        alert("You decide to Jay walk. All of a sudden someone starts blaring their horn to the left of you. This causes you to turn and look as you are walking and BAM! you get hit by a car and get knocked out.\nAs you recover conciousness, you lay on the concret with a crowd looking down at you. You tried to get up but feel that your leg is broken. As you lay your head back down on the cold concrete, your watch beeps; signalling that the hour has passed. You are offically late for class and use up your last tardy. You are asked to leave the program. You lose!\nMaybe you should've taken an Uber")
 
     } else if (mChoice[0].toLowerCase() === 'w'){
 
@@ -124,15 +124,15 @@ function sbuxDrink(){
 
             if(drinkChoice[0].toLowerCase() === 'v'){
 
-                alert("You get a Vanilla Latte. It is delicious. But you get to GA late. and use up your last tardy. You are asked to leave the program! You lose")
+                alert("You get a Vanilla Latte. It is delicious. But you get to GA late. and use up your last tardy. You are asked to leave the program! You lose!\n Maybe you should've taken an Uber")
                 
             } else if(drinkChoice[0].toLowerCase() === 'm'){
 
-                alert("You get a Mocha. It is hot, but the whipped cream tastes so good going down. But you get to GA late. and use up your last tardy. You are asked to leave the program! You lose")
+                alert("You get a Mocha. It is hot, but the whipped cream tastes so good going down. But you get to GA late. and use up your last tardy. You are asked to leave the program! You lose!\nMaybe you should've taken an Uber")
                 
             } else if (drinkChoice[0].toLowerCase() === 'c'){
 
-                alert("You get a Caramel Macchiato. You savor the contrasting flavors of the vanilla milk with the esspresso. But you get to GA late. and use up your last tardy. You are asked to leave the program! You lose")
+                alert("You get a Caramel Macchiato. You savor the contrasting flavors of the vanilla milk with the esspresso. But you get to GA late. and use up your last tardy. You are asked to leave the program! You lose!\nMaybe you should've taken an Uber")
                 
             }
 
@@ -143,7 +143,7 @@ function sbux() {
 
     while(sbuxChoice[0].toLowerCase() !== 'g' &&
         sbuxChoice[0].toLowerCase() !== 'k' &&
-        sbuxChoice[0].toLowerCase()){
+        sbuxChoice[0].toLowerCase() !== 'n'){
 
             sbuxChoice = prompt('You pass by a Starbucks. The smell of coffee makes you remember how tired you are. Do you: "Get" a drink, take "N" St, or "Keep" going?')
         
