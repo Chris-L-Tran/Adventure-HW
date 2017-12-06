@@ -54,14 +54,18 @@ function sbuxDrink(){
 function sbux() {
 
     while(sbuxChoice[0].toLowerCase() !== 'g' &&
-        sbuxChoice[0].toLowerCase() !== 'k'){
+        sbuxChoice[0].toLowerCase() !== 'k' &&
+        sbuxChoice[0].toLowerCase()){
 
-            sbuxChoice = prompt('You pass by a Starbucks. The smell of coffee makes you remember how tired you are. Do you: "Get" a drink, or "Keep" going?')
+            sbuxChoice = prompt('You pass by a Starbucks. The smell of coffee makes you remember how tired you are. Do you: "Get" a drink, take "N" St, or "Keep" going?')
         }
 
             if(sbuxChoice[0].toLowerCase() === 'g'){
                 sbuxDrink()
             } else if(sbuxChoice[0].toLowerCase() === 'k'){
+
+            } else if(sbuxChoice[0].toLowerCase() === 'n'){
+                scottCir()
 
             }
 
@@ -83,7 +87,9 @@ if (first[0].toLowerCase() === "u"){
     skipAhead()
     
 } else if(first[0].toLowerCase() === "c"){
+
     sbux()
+    
 } else if (first[0].toLowerCase() === 'm'){
 
     scottCir()
