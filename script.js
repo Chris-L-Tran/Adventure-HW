@@ -8,6 +8,7 @@ var mChoice = ' '
 var choice15 = ' '
 var choice16 = ' '
 
+
 function win(){
 
     alert("You made it to GA on time! Congrats! You sign in and sit down for the lecture.")
@@ -26,12 +27,13 @@ function street16(){
     while(choice16[0].toLowerCase() !== 'k' &&
     choice16[0].toLowerCase() !== 'w'){
 
+        choice16 = prompt('You reach 16th street. You see an amazing one man band playing your favoirte song. Do you stop to "watch" him, or do you "Keep" going?')
 
     }
 
         if (choice16[0].toLowerCase() === 'w'){
 
-            
+            alert("You stop to watch the performer. His rendition was amazing and you feel super pumped! However, You reach GA late and end up using your last tardy. You are asked to leave the program. You Lose!")
 
         } else if(choice16[0].toLowerCase() === 'k'){
 
@@ -43,19 +45,22 @@ function street16(){
 
 function street15(){
 
-    while(choice16[0].toLowerCase() !== 'k' &&
-    choice16[0].toLowerCase() !== 't'){
+    while(choice15[0].toLowerCase() !== 'k' &&
+    choice15[0].toLowerCase() !== 't'){
 
 
+        choice15 = prompt('You reach 15th street. You see a lady sitting on a bench. She is crying. Do you go and "talk" to her, or do you "keep" going?')
     }
 
-        if (choice16[0].toLowerCase() === 'w'){
+        if (choice15[0].toLowerCase() === 't'){
 
+            alert("You sit down and talk to the lady. You ask her what's wrong and she tells you about her problems. You try your best to make her feel better. She's starts to smile and is relieved of her stress. She says that she is so happy someone would stop and talk with her. You feel great about yourself. However, you are late to GA and use up your last tardy. You are asked to leave the program. You lose!")
             
 
-        } else if(choice16[0].toLowerCase() === 'k'){
+        } else if(choice15[0].toLowerCase() === 'k'){
 
-            win()            
+            win()     
+
         }
 
 }
