@@ -3,6 +3,7 @@ console.log('working')
 var first = ' '
 var scottChoice = ' '
 var sbuxChoice = ' '
+var drinkChoice = ' '
 
 function skipAhead(){
     
@@ -28,6 +29,28 @@ function scottCir(){
 
 }
 
+function sbuxDrink(){
+
+    while(drinkChoice[0].toLowerCase() !== 'v' &&
+        drinkChoice[0].toLowerCase() !== 'm' &&
+        drinkChoice[0].toLowerCase() !== 'c'){
+            
+            drinkChoice = prompt('You enter starbucks. The line is long, but you decide to wait. You reach the counter and you get a drink. You can get a "Vanilla" latte, "Mocha", or a "Caramel" Macchiato. What drink do you get?')
+
+            if(drinkChoice[0].toLowerCase() === 'v'){
+                alert("You get a Vanilla Latte. It is delicious. But you get to GA late. and use up your last tardy. You are asked to leave the program! You lose")
+                
+            } else if(drinkChoice[0].toLowerCase() === 'm'){
+                alert("You get a Mocha. It is hot, but the whipped cream tastes so good going down. But you get to GA late. and use up your last tardy. You are asked to leave the program! You lose")
+                
+            } else if (drinkChoice[0].toLowerCase() === 'c'){
+                alert("You get a Caramel Macchiato. You savor the contrasting flavors of the vanilla milk with the esspresso. But you get to GA late. and use up your last tardy. You are asked to leave the program! You lose")
+                
+            }
+
+        }
+}
+
 function sbux() {
 
     while(sbuxChoice[0].toLowerCase() !== 'g' &&
@@ -37,12 +60,13 @@ function sbux() {
         }
 
             if(sbuxChoice[0].toLowerCase() === 'g'){
-
+                sbuxDrink()
             } else if(sbuxChoice[0].toLowerCase() === 'k'){
 
             }
 
 }
+
 
 
 while(first[0].toLowerCase() !== 'u' &&
@@ -55,6 +79,7 @@ while(first[0].toLowerCase() !== 'u' &&
 
 
 if (first[0].toLowerCase() === "u"){
+
     skipAhead()
     
 } else if(first[0].toLowerCase() === "c"){
