@@ -5,6 +5,8 @@ var scottChoice = ' '
 var sbuxChoice = ' '
 var drinkChoice = ' '
 var mChoice = ' '
+var choice15 = ' '
+var choice16 = ' '
 
 function win(){
 
@@ -19,6 +21,44 @@ function skipAhead(){
 }
 
 
+function street16(){
+
+    while(choice16[0].toLowerCase() !== 'k' &&
+    choice16[0].toLowerCase() !== 'w'){
+
+
+    }
+
+        if (choice16[0].toLowerCase() === 'w'){
+
+            
+
+        } else if(choice16[0].toLowerCase() === 'k'){
+
+            win()
+
+        }
+    
+}
+
+function street15(){
+
+    while(choice16[0].toLowerCase() !== 'k' &&
+    choice16[0].toLowerCase() !== 't'){
+
+
+    }
+
+        if (choice16[0].toLowerCase() === 'w'){
+
+            
+
+        } else if(choice16[0].toLowerCase() === 'k'){
+
+            win()            
+        }
+
+}
 
 function mStreet(){
 
@@ -35,6 +75,7 @@ function mStreet(){
 
     } else if (mChoice[0].toLowerCase() === 'w'){
 
+        street16()
 
     }
 }
@@ -53,8 +94,12 @@ function scottCir(){
 
     } else if (scottChoice[0].toLowerCase() === 'k'){
 
+        street15()
+
     } else if (scottChoice[0].toLowerCase() === 'h'){
         
+        street16()
+
     }
 
 }
@@ -91,6 +136,7 @@ function sbux() {
         sbuxChoice[0].toLowerCase()){
 
             sbuxChoice = prompt('You pass by a Starbucks. The smell of coffee makes you remember how tired you are. Do you: "Get" a drink, take "N" St, or "Keep" going?')
+        
         }
 
             if(sbuxChoice[0].toLowerCase() === 'g'){
