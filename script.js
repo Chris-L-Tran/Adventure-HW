@@ -6,11 +6,19 @@ var sbuxChoice = ' '
 var drinkChoice = ' '
 var mChoice = ' '
 
+function win(){
+
+    alert("You made it to GA on time! Congrats! You sign in and sit down for the lecture.")
+
+}
+
 function skipAhead(){
     
     alert("You took an Uber! \nCongrats. You made it on time!")
 
 }
+
+
 
 function mStreet(){
 
@@ -18,6 +26,7 @@ function mStreet(){
     mChoice[0].toLowerCase() !== 'w'  ){
         
         mChoice = prompt('You reach M Street. You just missed the light. You can choose to "Jay" walk, or wait for the light. What do you do?')
+
     }
 
     if(mChoice[0].toLowerCase() === 'j'){
@@ -90,7 +99,7 @@ function sbux() {
 
             } else if(sbuxChoice[0].toLowerCase() === 'k'){
 
-
+                mStreet()
 
             } else if(sbuxChoice[0].toLowerCase() === 'n'){
 
