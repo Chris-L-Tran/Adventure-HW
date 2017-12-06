@@ -98,7 +98,9 @@ function scottCir(){
 
     if(scottChoice[0].toLowerCase() === 'b'){
 
-        alert("You go up and talk to the blind person. You talk to him and help lead them in the right direction. However, this makes you late for GA. You use up your last tardy. You are asked to leave the program. You Lose!")
+        alert("You go up and talk to the blind person. You talk to him and help lead them in the right direction. They are actually headed down 16th street, so you don't use up that much time. You reach M street and the blind person thanks you for your help.")
+        
+        street16()
 
     } else if (scottChoice[0].toLowerCase() === 'k'){
 
