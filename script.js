@@ -50,6 +50,7 @@ function street15(){
 
 
         choice15 = prompt('You reach 15th street. You see a lady sitting on a bench. She is crying. Do you go and "talk" to her, or do you "keep" going?')
+
     }
 
         if (choice15[0].toLowerCase() === 't'){
@@ -87,15 +88,17 @@ function mStreet(){
 
 function scottCir(){
 
-    while(scottChoice[0].toLowerCase() !== 'g' &&
+    while(scottChoice[0].toLowerCase() !== 'b' &&
     scottChoice[0].toLowerCase() !== 'k' &&
     scottChoice[0].toLowerCase() !== 'h'){
 
-        scottChoice = prompt('You reach Scott Circle. You see a blind person who fell down and lost their walking stick. You can "Head" down 16th st, "Keep" Going, or "Help" The blind person. What do you do?')
+        scottChoice = prompt('You reach Scott Circle. You see a blind person who fell down and lost their walking stick. You can "Head" down 16th st, "Keep" Going, or help the "blind" person. What do you do?')
 
     }
 
-    if(scottChoice[0].toLowerCase() === 'g'){
+    if(scottChoice[0].toLowerCase() === 'b'){
+
+        alert("You go up and talk to the blind person. You talk to him and help lead them in the right direction. However, this makes you late for GA. You use up your last tardy. You are asked to leave the program. You Lose!")
 
     } else if (scottChoice[0].toLowerCase() === 'k'){
 
