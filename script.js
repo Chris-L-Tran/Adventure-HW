@@ -4,10 +4,30 @@ var first = ' '
 var scottChoice = ' '
 var sbuxChoice = ' '
 var drinkChoice = ' '
+var mChoice = ' '
 
 function skipAhead(){
     
     alert("You took an Uber! \nCongrats. You made it on time!")
+
+}
+
+function mStreet(){
+
+    while(mChoice[0].toLowerCase() !== 'j' &&
+    mChoice[0].toLowerCase() !== 'w'  ){
+        
+        mChoice = prompt('You reach M Street. You just missed the light. You can choose to "Jay" walk, or wait for the light. What do you do?')
+    }
+
+    if(mChoice[0].toLowerCase() === 'j'){
+
+        alert("You decide to Jay walk. All of a sudden someone starts blaring their horn to the left of you. This causes you to turn and look as you are walking and BAM! you get hit by a car and get knocked out.\nAs you recover conciousness, you lay on the concret with a crowd looking down at you. You tried to get up but feel that your leg is broken. As you lay your head back down on the cold concrete, your watch beeps; signalling that the hour has passed. You are offically late for class and use up your last tardy. You are asked to leave the program. You lose!")
+
+    } else if (mChoice[0].toLowerCase() === 'w'){
+
+
+    }
 }
 
 function scottCir(){
@@ -17,6 +37,7 @@ function scottCir(){
     scottChoice[0].toLowerCase() !== 'h'){
 
         scottChoice = prompt('You reach Scott Circle. You see a blind person who fell down and lost their walking stick. You can "Head" down 16th st, "Keep" Going, or "Help" The blind person. What do you do?')
+
     }
 
     if(scottChoice[0].toLowerCase() === 'g'){
@@ -38,12 +59,15 @@ function sbuxDrink(){
             drinkChoice = prompt('You enter starbucks. The line is long, but you decide to wait. You reach the counter and you get a drink. You can get a "Vanilla" latte, "Mocha", or a "Caramel" Macchiato. What drink do you get?')
 
             if(drinkChoice[0].toLowerCase() === 'v'){
+
                 alert("You get a Vanilla Latte. It is delicious. But you get to GA late. and use up your last tardy. You are asked to leave the program! You lose")
                 
             } else if(drinkChoice[0].toLowerCase() === 'm'){
+
                 alert("You get a Mocha. It is hot, but the whipped cream tastes so good going down. But you get to GA late. and use up your last tardy. You are asked to leave the program! You lose")
                 
             } else if (drinkChoice[0].toLowerCase() === 'c'){
+
                 alert("You get a Caramel Macchiato. You savor the contrasting flavors of the vanilla milk with the esspresso. But you get to GA late. and use up your last tardy. You are asked to leave the program! You lose")
                 
             }
@@ -61,10 +85,15 @@ function sbux() {
         }
 
             if(sbuxChoice[0].toLowerCase() === 'g'){
+
                 sbuxDrink()
+
             } else if(sbuxChoice[0].toLowerCase() === 'k'){
 
+
+
             } else if(sbuxChoice[0].toLowerCase() === 'n'){
+
                 scottCir()
 
             }
@@ -89,7 +118,7 @@ if (first[0].toLowerCase() === "u"){
 } else if(first[0].toLowerCase() === "c"){
 
     sbux()
-    
+
 } else if (first[0].toLowerCase() === 'm'){
 
     scottCir()
